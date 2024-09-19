@@ -63,4 +63,4 @@ function randomString(length) {
 }
 
 console.log(randomString(4)); // Output: e.g. 'h1zt'
-console.log(randomString(5)); // Output: e.g. 'zvc1e'
+console.log(randomString(5)); // Output: e.g.'zvc1e'
