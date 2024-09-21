@@ -88,9 +88,9 @@ const { flushSync } = require("react-dom");
 
 // Bonus: Return both the filtered array and the removed words. dont use filter metohds use it with for loop.
 function filterSpecialChars(arr) {
-  let filteredWords = []; // მასივი გაფილტრული სიტყვებისთვის
-  let removedWords = []; // მასივი ამოღებული სიტყვებისთვის
-  const specialCharPattern = /[!@#$%^&*(),.?":{}|<>]/; // რეგულარული გამოსახულება
+  let filteredWords = [];
+  let removedWords = [];
+  const specialCharPattern = /[!@#$%^&*(),.?":{}|<>]/;
 
   for (let i = 0; i < arr.length; i++) {
     if (specialCharPattern.test(arr[i])) {
