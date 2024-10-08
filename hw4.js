@@ -1,15 +1,21 @@
 // 1)  Write a function that takes two or more objects as arguments and merges them into a single object
 
-function mergeObjects(...objects) {
-  return Object.assign({}, ...objects);
-}
+// function mergeObjects(...objects) {
+//   return Object.assign({}, ...objects);
+// } ეს 1 ვარიანტი
 
 const obj1 = { a: 1, b: 2 };
 const obj2 = { b: 3, c: 4 };
 const obj3 = { d: 5 };
+// const obj4 = { ...obj1, ...obj2, ...obj3 }; ეს მეორე
 
-const mergedObj = mergeObjects(obj1, obj2, obj3);
-console.log(mergedObj); // { a: 1, b: 3, c: 4, d: 5 }
+function mergeObjectsSpread(...objects) {
+  return { ...objects };
+}
+
+const mergedObjSpread = mergeObjectsSpread(obj1, obj2, obj3);
+// console.log(obj4); // { a: 1, b: 3, c: 4, d: 5 }
+console.log(mergedObjSpread);
 
 // 2)  Write a function that takes an object and a key as input and deletes the specified key from the object.
 function deleteKeyFromObject(obj, key) {
