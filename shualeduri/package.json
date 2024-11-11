@@ -1,0 +1,17 @@
+{
+  "name": "shualeduri",
+  "version": "1.0.0",
+  "main": "expense-cli.js",
+  "scripts": {
+    "start": "node expense-cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "commander": "^12.1.0",
+    "fs": "^0.0.1-security"
+  }
+}
